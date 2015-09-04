@@ -18,4 +18,3 @@ This is my starter kit for Laravel 5.
   * Run `chmod -R 777 storage`.
   * Run `chmod -R 777 bootstrap/cache`.
   * Optionally, run `chmod -R 777 public/uploads` if you want to have an upload folder for user-generated-content.
-  * No newline at end of file.
