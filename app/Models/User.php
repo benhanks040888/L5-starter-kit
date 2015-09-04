@@ -11,6 +11,8 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
+use Sentinel;
+
 class User extends EloquentUser implements AuthenticatableContract,
                                     AuthorizableContract,
                                     CanResetPasswordContract
@@ -37,4 +39,29 @@ class User extends EloquentUser implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+
+    /**
+    * The appended attributes that should be visible in arrays.
+    *
+    * @var array
+    */
+    protected $appends = array('full_name');
+
+    public function isAdmin()
+    {
+        return Sentinel::check() && Sentinel::getUser()->hasAccess('admin');
+    }
+
+
+    /**
+    * Accessor for the "full_name" attribute.
+    *
+    * @return string
+    */
+    public function getFullNameAttribute()
+    {
+        return ucwords(trim($this->attributes['first_name'] . ' ' . $this->attributes['last_name']));
+    }
+
 }
