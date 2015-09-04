@@ -3,3 +3,12 @@
 Homestead.yaml
 Homestead.json
 .env
+composer.lock
+
+.DS_Store
+Thumbs.db
+
+node_modules
+uploads
+.sass-cache
+public/assets/bower_components
