@@ -1,5 +1,5 @@
-L4-Starter
-==========
+L5-starter-kit
+==============
 
 This is my starter kit for Laravel 5.
 
