@@ -1,0 +1,60 @@
+.form-inline select.form-control {
+  max-width: 100px;
+}
+
+.panel-grow {
+  border-color: #ea4478;
+}
+
+.panel-grow .panel-heading {
+  border-color: #ea4478;
+  color: #fff;
+  background-color: #ea4478;
+}
+
+.panel-grow a {
+  color: #ea4478;
+}
+
+.panel-first-step {
+  border-color: #f29a4e;
+}
+
+.panel-first-step .panel-heading {
+  border-color: #f29a4e;
+  color: #fff;
+  background-color: #f29a4e;
+}
+
+.panel-first-step a {
+  color: #f29a4e;
+}
+
+
+.panel-explore {
+  border-color: #54b874;
+}
+
+.panel-explore .panel-heading {
+  border-color: #54b874;
+  color: #fff;
+  background-color: #54b874;
+}
+
+.panel-explore a {
+  color: #54b874;
+}
+
+.panel-create {
+  border-color: #efc243;
+}
+
+.panel-create .panel-heading {
+  border-color: #efc243;
+  color: #fff;
+  background-color: #efc243;
+}
+
+.panel-create a {
+  color: #efc243;
+}

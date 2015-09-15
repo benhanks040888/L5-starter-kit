@@ -24,8 +24,8 @@ class SentinelSeeder extends Seeder
           'name'        => 'Admin',
           'slug'        => 'admin',
           'permissions' => array(
-            'admin'     => 1,
-            'users'     => 1,
+            'admin'     => true,
+            'users'     => true,
           )
         ));
 
@@ -33,8 +33,8 @@ class SentinelSeeder extends Seeder
           'name'        => 'Users',
           'slug'        => 'user',
           'permissions' => array(
-            'admin'     => 0,
-            'users'     => 1,
+            'admin'     => false,
+            'users'     => true,
           )
         ));
 

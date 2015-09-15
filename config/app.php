@@ -146,6 +146,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         'Cartalyst\Sentinel\Laravel\SentinelServiceProvider',
+        Collective\Html\HtmlServiceProvider::class
     ],
 
     /*
@@ -198,6 +199,8 @@ return [
         'Activation' => 'Cartalyst\Sentinel\Laravel\Facades\Activation',
         'Reminder'   => 'Cartalyst\Sentinel\Laravel\Facades\Reminder',
         'Sentinel'   => 'Cartalyst\Sentinel\Laravel\Facades\Sentinel',
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
